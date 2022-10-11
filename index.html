@@ -1,115 +1,38 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Mozilla splash page</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the smallversion of the Firefox logo -->
-      <img
-        src="imgsSplash\tinified\firefox_logo-only_RGB_120w_5KB.png"
-        alt="The Firefox logo; it is a fox around a globe representing planet earth."
-      />
-    </header>
-    <main>
-      <article>
-        <!-- insert iframe from youtube -->
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube-nocookie.com/embed/ojcNcvb1olg"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+<html lang="en">
 
-        <h2>Rocking the free web</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter App</title>
+</head>
 
-        <p>
-          Mozilla are a global community of technologists, thinkers, and
-          builders, working together to keep the Internet alive and accessible,
-          so people worldwide can be informed contributors and creators of the
-          Web. We believe this act of human collaboration across an open
-          platform is essential to individual growth and our collective future.
-        </p>
+<body>
+    <div id="container">
+        <div id="app">
+            <h1>People entered:</h1>
+            <h2 id="content-el">0</h2>
+            <br />
+            <br />
+            <br />
+            <br />
+            <button id="increment-btn" onclick="incrementOnClick()">PLUS ONE</button>
+            <br />
+            <br />
+            <button id="save-btn" onclick="saveOnClick()">SAVE</button>
+        </div>
+        <div id="test">
+            <h2>Previous entries:</h2>
+            <h3 id="target">0</h3>
+            <h3>Past counts:</h3>
+            <h3 id="storage"></h3>
+        </div>
+        </textarea>
+    </div>
+</body>
 
-        <p>
-          Click on the images below to find more information about the cool
-          stuff Mozilla does.
-          <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">
-            Red panda picture
-          </a>
-          by Mathias Appel.
-        </p>
-      </article>
+<script src="app.js"></script>
 
-      <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img
-            srcset="
-              imgsSplash\tinified\firefox_logo-only_RGB_120w_5KB.png  120w,
-              imgsSplash\tinified\firefox_logo-only_RGB_400w_20KB.png 400w
-            "
-            sizes="(max-with: 500px) 120px, 400px"
-            src="tinified/firefox_logo-only_RGB_123KB.png"
-            alt="Firefox logo used as hyperlink to Mozilla's Firefox Homepage."
-          />
-        </a>
-        <a href="https://www.mozilla.org/">
-          <img
-            srcset="
-              imgsSplash/tinified/mozilla-dinosaur-head_400w_18KB.png 400w,
-              imgsSplash/tinified/mozilla-dinosaur-head_120_5KB.png   120w
-            "
-            sizes="(max-width: 500px) 120px, 400px"
-            src="imgsSplash\tinified\mozilla-dinosaur-head_47KB.png"
-            alt="T-Rex esque dinosaur head used as hyperlink to Mozilla's homepage."
-          />
-        </a>
-        <a href="https://addons.mozilla.org/">
-          <img
-            srcset="
-              imgsSplash\tinified\firefox-addons_400w_47KB.png 400w,
-              imgsSplash\tinified\firefox-addons_120w_6KB.png  120w
-            "
-            sizes="(max-width: 500px) 120px, 400px"
-            alt="A Firefox logo transformed into a puzzle, some pieces on the logo are not on their place; this imagel is used as hyperlink to Firefox' browser add-ons page."
-          />
-        </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img src="imgsSplash/tinified/mdn.svg" />
-        </a>
-        <div class="clearfix"></div>
-      </div>
-
-      <div class="red-panda">
-        <!-- insert picture element -->
-        <picture>
-          <source
-            media="(max-width: 600px)"
-            srcset="imgsSplash/tinified/red-panda_600w_crop_127KB.png"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="imgsSplash/tinified/red-panda_1200w_197KB.png"
-          />
-          <img
-            src="imgsSplash/tinified/red-panda_197KB.jpg"
-            alt="Red panda hanging from a tree looking into the camera."
-          />
-        </picture>
-      </div>
-    </main>
-  </body>
 </html>

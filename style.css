@@ -1,71 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 
 body {
-    background-image: url(/img/EmdenVampire.svg);
-    height: auto;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-color: black;
-}
-
-div#container{
-    height: 100%;
-    width: 100%;
-    border-radius: 5%;
-    padding-left: 5%;
-}
-
-div#app{
-    position: relative;
-    height: 350px;
-    width: 300px;
-    border-radius: 5%;
-    border: 5px solid black;
-    background-color: rgba(250, 250, 250, 0.3);
+    background-image: url("images/table.png");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
     text-align: center;
-
 }
 
-div#test{
-    position:absolute;
-    height: 200px;
-    width: 300px;
-    border-radius: 5%;
-    border: 5px solid black;
-    text-align: center;
-    background-color: rgba(250, 250, 250, 0.3);
-    font-family: Raleway, sans-serif;
-    font-size: medium;
-    font-weight: 900;
-    font: bolder;
+#appContainer{
+    margin: auto;
 }
 
-button#increment-btn{    
-    height: 15%;
-    width: 40%;
-    background-color: lightgreen;
-    font-family: Raleway, sans-serif;
-    font-size: auto;
-    font-weight: 900;
-    font: bolder;
-    border-radius: 5px;
+h1 {
+    color: goldenrod;
 }
 
-button#save-btn{
-    height: 15%;
-    width: 40%;
-    background-color: lightblue;
-    font-family: "Raleway", sans-serif;
-    font-size: auto;
-    font-weight: 900;
-    font: bolder;
-    margin-bottom: 5px;
-    border-radius: 5px;
+#fucked,#moreFucked {
+    font-style: italic;
+}
+span{
+    font-style: normal;
 }
 
 
-h1, h2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: auto;
+#dealersCards{
+    
+    width: auto;
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+}
+#playersCards{
+   
+    width: auto;
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+}
+
+/* p{
+    float: top left;
+}
+#result-el{
+    float: left;
+}
+
+#cardOutput1{
+    float: left;
+    margin: 30px 30px;
+}
+#cardOutput2{
+    float: left;
+    margin: 30px 30px;
+} */
+
+
+img{
+    height: 90px;
+    width: 70px;
+}
+
+button {
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#newStartControls{
+    float: left;
+}
+#gameControls{
+    float: right;
 }

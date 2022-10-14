@@ -6,33 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Counter App</title>
+    <title>Black Jack App</title>
 </head>
 
 <body>
-    <div id="container">
-        <div id="app">
-            <h1>People entered:</h1>
-            <h2 id="content-el">0</h2>
-            <br />
-            <br />
-            <br />
-            <br />
-            <button id="increment-btn" onclick="incrementOnClick()">PLUS ONE</button>
-            <br />
-            <br />
-            <button id="save-btn" onclick="saveOnClick()">SAVE</button>
+    <h1>BlackJack</h1>
+    <output id="endMessage" data-default-value=""></output>
+    <br />
+    <br />
+    <br />
+    <div id="appContainer">
+        <div id="dealersCards">
+            <p id="dealerCardsField" data-default-value="Dealer Cards: ">Dealer Cards: </p>
+            <output id="dealerCardValue1" data-default-value=""></output>
+            <output id="dealerCardValue2" data-default-value=""></output>
+            <output id="dealerCardValueX" data-default-value=""></output>
+            <p id="dealerCardValue" data-default-value="Value of Dealer's Cards: ">Value of Dealer's Cards: </p><output
+                id="dealerCardValueSum" data-default-value=""></output>
+            <!-- <img class="iCard" src="/images/Spades/2.svg" alt="">
+            <img class="iCard" src="/images/Spades/3.svg" alt=""> -->
+            <!-- <img class="iCard" src="/images/Spades/4.svg" alt="">
+            <img class="iCard" src="/images/Spades/5.svg" alt="">
+            <img class="iCard" src="/images/Spades/6.svg" alt="">
+            <img class="iCard" src="/images/Spades/7.svg" alt="">
+            <img class="iCard" src="/images/Spades/8.svg" alt="">
+            <img class="iCard" src="/images/Spades/9.svg" alt="">
+            <img class="iCard" src="/images/Spades/10.svg" alt="">
+            <img class="iCard" src="/images/Spades/J.svg" alt="">
+            <img class="iCard" src="/images/Spades/Q.svg" alt="">
+            <img class="iCard" src="/images/Spades/K.svg" alt="">
+            <img class="iCard" src="/images/Spades/A.svg" alt=""> -->
         </div>
-        <div id="test">
-            <h2>Previous entries:</h2>
-            <h3 id="target">0</h3>
-            <h3>Past counts:</h3>
-            <h3 id="storage"></h3>
+        <br />
+        <br />
+        <div id="playersCards">
+            <p id="playerCardsField" data-default-value="My Cards: ">My Cards: </p>
+            <output id="playerCardValue1" data-default-value=""></output>
+            <output id="playerCardValue2" data-default-value=""></output>
+            <output id="playerCardValueX" data-default-value=""></output>
+            <p id="playerCardValue" data-default-value="Value of Player's Cards: ">Value of Player's Cards: </p><output
+                id="playerCardValueSum" data-default-value=""></output>
+
+            <!-- <img class="iCard" src="/images/Spades/2.svg" alt="">
+            <img class="iCard" src="/images/Spades/3.svg" alt="">
+            <img class="iCard" src="/images/Spades/4.svg" alt="">
+            <img class="iCard" src="/images/Spades/5.svg" alt="">
+            <img class="iCard" src="/images/Spades/6.svg" alt="">
+            <img class="iCard" src="/images/Spades/7.svg" alt="">
+            <img class="iCard" src="/images/Spades/8.svg" alt="">
+            <img class="iCard" src="/images/Spades/9.svg" alt="">
+            <img class="iCard" src="/images/Spades/10.svg" alt="">
+            <img class="iCard" src="/images/Spades/J.svg" alt="">
+            <img class="iCard" src="/images/Spades/Q.svg" alt="">
+            <img class="iCard" src="/images/Spades/K.svg" alt=""> -->
+            <!-- <img class="iCard" src="/images/Spades/A.svg" alt=""> -->
         </div>
-        </textarea>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="newStartControls">
+        <button id="startGameBtn" onclick="startGame()">Start Game</button>
+        <br />
+        <button id="newGameBtn" onclick="newGame()">New Game</button>
+        <br />
+        <br />
+        <output id="playerName">Kassandra</output>
+        <br />
+    </div>
+    <div id="gameControls">
+        <button id="start-el" onclick="playerDraw()">Draw</button>
+        <br />
+        <button id="new-el" onclick="playerHold()">Hold</button>
+        <output id="img"></output>
     </div>
 </body>
-
-<script src="app.js"></script>
+<script src="/app.js"></script>
 
 </html>

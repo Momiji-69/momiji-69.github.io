@@ -71,7 +71,11 @@ function startGame() {
   count++;
   initialDraw();
   if (result == 21 || resultD >= 22) {
-    return (endMessage.textContent = winM);
+    endMessage.textContent = winM;
+    return;
+  } else if (resultD == 21 || result >= 22) {
+    endMessage.textContent = loseM;
+    return;
   }
 }
 
@@ -114,7 +118,8 @@ function playerDraw() {
 //Dealer phase
 let c = "";
 function dealerDrawCard() {
-  if (resultD >= 17) {
+  if (resultD >= 20) {
+    endMessage.textContent = loseM;
     return;
   }
   while (resultD <= 16) {
